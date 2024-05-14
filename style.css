@@ -1,0 +1,81 @@
+body{
+     
+    linear-gradient:(135deg, #667eea 0%, #764ba2 100%); 
+      
+     background-color: #A34343;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.book{
+    position: relative;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: lightcoral;
+     
+    background-position: center;
+    background-size: 97%;
+    -webkit-box-shadow:1px 1px 12px black;
+    box-shadow: 1px 1px 12px #000;
+    -webkit-transform: preserve-3d;
+    -ms-transform: preserve-3d;
+    transform: preserve-3d;
+    -webkit-perspective: 2000px;
+     perspective: 2000px;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     flex-direction: column;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     align-items: center;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     text-align: center;
+     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     font-size:25px;
+     text-decoration:underline;
+}
+.cover{
+    top: 0;
+    position: absolute;
+   background-image: url(./pink.jpg);
+      
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform-origin: 0;
+    -ms-transform-origin: 0;
+    transform-origin: 0;
+    -webkit-box-shadow:1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-line-pack: center;
+    justify-content: center;
+    text-decoration: underline;
+}
+.book :hover.cover{
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: rotateY(-85deg);
+    -ms-transform: rotateY(-85deg);
+      transform: rotateY(-95deg);
+}
+
+      
